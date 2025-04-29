@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article{
+    background-color: hsl(0, 0%, 12%);
+    height: 65%;
+    width: 230%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    padding: 30px 10px;
+}
+
+/* ------------------- HEADER --------------------------- */
+header{
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 35%;
+}
+article header img{
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+article header p{
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(75, 94%, 57%);
+}
+
+/* ----------------------- NAV ---------------------- */
+
+article nav {
+    height:65%;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#desc{
+    font-size: 13px;
+    text-align: center;
+}
+
+article nav ul{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article nav ul li {
+    list-style-type:none;
+    text-align: center;
+    width: 80%;
+    background-color: hsl(0, 0%, 20%);
+    padding: 10px 0;
+    margin: 8px 0;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 900px) {
+    article {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    article {
+        width: 80%;
+    }
+}
